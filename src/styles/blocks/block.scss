@@ -1,9 +1,12 @@
 .block {
-	margin-top: 65px;
+	margin-top: 15px;
 	position: relative;
 	z-index: 2;
 	@media (max-width: 1919px){
 		margin-top: 40px;
+	}
+	.block2 {
+		margin-top: 38px;
 	}
 }
 .container {

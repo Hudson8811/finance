@@ -1,6 +1,9 @@
 .safety {
-	margin-top: 40px;
+	margin-top: 58px;
 	position: relative;
+	@media (max-width: 1439px){
+		margin-top: 40px;
+	}
 	>.circle-p {
 		top: 0;
 		left: auto;

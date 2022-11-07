@@ -1,7 +1,10 @@
 .partners {
 	position: relative;
 	z-index: 2;
-	margin-top: 80px;
+	margin-top: 97px;
+	@media (max-width: 1919px){
+		margin-top: 80px;
+	}
 	@media (max-width: 1439px){
 		margin-top: 40px;
 	}
