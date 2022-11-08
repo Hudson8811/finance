@@ -313,6 +313,13 @@
 		.select2-selection__arrow {
 			transform: rotate(-180deg);
 		}
+		&.select2-container--above {
+			.select2-selection {
+				border: 2px solid #7231FF;
+				border-top: none;
+				border-radius: 5px 5px 0 0;
+			}
+		}
 	}
 }
 
@@ -320,6 +327,10 @@
 	border: 2px solid #7231FF;
 	border-radius: 0 0 5px 5px;
 	background: #0B0023;
+	&.select2-dropdown--above {
+		border-radius: 5px 5px 0 0;
+		
+	}
 	.select2-results {
 		ul.select2-results__options {
 			max-height: 350px;

@@ -6,7 +6,7 @@ $(".calculator__select").select2({
 function formatData (data) {
 	if (!data.id) { return data.text; }
 	var $result= $(
-		'<span><img src="/images/calculator/'+data.element.value+'.svg"/> ' + data.text + '</span>'
+		'<span><img src=" https://hudson8811.github.io/finance/public/images/calculator/'+data.element.value+'.svg"/> ' + data.text + '</span>'
 	);
 	return $result;
 };
