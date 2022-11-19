@@ -29,10 +29,9 @@
 		padding: 40px;
 		background: #03010F;
 		border-radius: 10px;
-		.circle-p {
+		img.circle-back-p {
+			transform: translate(-50%, -50%);
 			top: 0;
-			width: 271px;
-			height: 271px;
 		}
 	}
 	&__content {

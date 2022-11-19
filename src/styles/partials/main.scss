@@ -180,6 +180,37 @@
 	filter: blur(168.256px);
 }
 
+img.circle-back-v {
+	display: block;
+	position: absolute;
+	z-index: -1;
+	width: 750px;
+	height: 750px;
+	max-width: 100%;
+	left: 50%;
+	top: 50%;
+}
+img.circle-back-b {
+	display: block;
+	position: absolute;
+	z-index: -1;
+	width: 750px;
+	height: 750px;
+	max-width: 100%;
+	left: 50%;
+	top: 50%;
+}
+img.circle-back-p {
+	display: block;
+	position: absolute;
+	z-index: -1;
+	width: 750px;
+	height: 750px;
+	max-width: 100%;
+	left: 50%;
+	top: 50%;
+}
+
 
 .menu {
 	@media (max-width: 767px){
