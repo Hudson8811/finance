@@ -1,3 +1,17 @@
+/* прокрутка при клике */
+$('.click').on('click', function() {
+
+	let href = $(this).attr('href');
+
+	$('html, body').animate({
+		scrollTop: $(href).offset().top
+	}, {
+		duration: 300,
+		easing: "linear"
+	});
+
+	return false;
+});
 
 $(".calculator__select").select2({
 	templateResult: formatData,
@@ -39,6 +53,5 @@ $(".calculator__input input").on('keyup mouseup', function () {
 	$(".diargam__amount2").text(amount2);
 	$(".diargam__amount3").text(amount3);
 	$(".diargam__amount4").text(amount4);
-
 });
 

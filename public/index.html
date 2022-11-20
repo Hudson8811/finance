@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Krona+One&amp;family=Ubuntu:wght@500;700&amp;display=swap" attr>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css">
-    <link href="css/main.min.css?v=2" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
     <title>Главная</title>
   </head>
   <body>
@@ -17,11 +17,11 @@
           <div class="logo"> <img src="images/logo.svg" alt="alt"></div>
           <nav class="menu">
             <ul class="menu__list">
-              <li class="menu__item"> <a class="menu__link" href="#">Описание</a></li>
-              <li class="menu__item"> <a class="menu__link" href="#">Получить</a></li>
-              <li class="menu__item"> <a class="menu__link" href="#">Калькулятор</a></li>
-              <li class="menu__item"> <a class="menu__link" href="#">Партнеры</a></li>
-              <li class="menu__item"> <a class="menu__link" href="#">Карта</a></li>
+              <li class="menu__item"> <a class="menu__link click" href="#cards">Описание</a></li>
+              <li class="menu__item"> <a class="menu__link click" href="#steps">Получить</a></li>
+              <li class="menu__item"> <a class="menu__link click" href="#calculator">Калькулятор</a></li>
+              <li class="menu__item"> <a class="menu__link click" href="#partners">Партнеры</a></li>
+              <li class="menu__item"> <a class="menu__link click" href="#order">Карта</a></li>
             </ul>
           </nav>
           <select class="header__lang"> 
@@ -68,7 +68,7 @@
             <div class="hero__img-mob ibg"><img src="images/hero/hero-img-mob.png" alt="alt"></div>
           </div>
         </section>
-        <section class="cards">
+        <section class="cards" id="cards">
           <div class="container"> 
             <div class="cards__row"> 
               <div class="cards__card-wrapper"><img src="images/cards/1.png" alt="alt">
@@ -131,7 +131,7 @@
             </div>
           </div>
         </section>
-        <section class="steps">
+        <section class="steps" id="steps">
           <div class="container">
             <div class="steps__title title"> <span>Простые шаги </span>для получения вашей карты</div>
           </div>
@@ -186,7 +186,7 @@
             </div>
           </div>
         </section>
-        <section class="calculator"><img class="circle-back-v" src="images/v.png" alt="alt"><img class="circle-back-b" src="images/b.png" alt="alt">
+        <section class="calculator" id="calculator"><img class="circle-back-v" src="images/v.png" alt="alt"><img class="circle-back-b" src="images/b.png" alt="alt">
           <div class="calculator__container">
             <div class="calculator__body"> 
               <div class="calculator__title title">Рассчитайте свой крипто-доход</div>
@@ -277,7 +277,7 @@
             </div>
           </div>
         </section>
-        <section class="partners">
+        <section class="partners" id="partners">
           <div class="container"> 
             <div class="partners__title title">Наши партнеры</div>
             <div class="partners__items"> 
@@ -323,7 +323,7 @@
             </div>
           </div>
         </section>
-        <section class="order">
+        <section class="order" id="order">
           <div class="container">
             <div class="order__title title">Закажи карту прямо сейчас</div>
             <form class="order__form" action="#">
@@ -340,11 +340,11 @@
           <div class="logo"> <img src="images/logo.svg" alt="alt"></div>
           <nav class="footer__menu menu">
             <ul class="menu__list">
-              <li class="menu__item"> <a class="menu__link" href="#">Описание</a></li>
-              <li class="menu__item"> <a class="menu__link" href="#">Получить</a></li>
-              <li class="menu__item"> <a class="menu__link" href="#">Калькулятор</a></li>
-              <li class="menu__item"> <a class="menu__link" href="#">Партнеры</a></li>
-              <li class="menu__item"> <a class="menu__link" href="#">Карта</a></li>
+              <li class="menu__item"> <a class="menu__link click" href="#cards">Описание</a></li>
+              <li class="menu__item"> <a class="menu__link click" href="#steps">Получить</a></li>
+              <li class="menu__item"> <a class="menu__link click" href="#calculator">Калькулятор</a></li>
+              <li class="menu__item"> <a class="menu__link click" href="#partners">Партнеры</a></li>
+              <li class="menu__item"> <a class="menu__link click" href="#order">Карта</a></li>
             </ul>
           </nav>
           <select class="footer__lang"> 
