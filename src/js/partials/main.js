@@ -30,7 +30,7 @@ $(document).ready(function(){
 		$('.diagram__item').removeClass('active');
 		$(this).addClass('active');
 	});
-	$('.btn').click(function(){
+	$('.btn-open-popap').click(function(){
 		$('.popap').addClass('active');
 	});
 	$('.popap__back').click(function(){
@@ -55,3 +55,88 @@ $(".calculator__input input").on('keyup mouseup', function () {
 	$(".diargam__amount4").text(amount4);
 });
 
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+	const hero__form = document.querySelector('.hero__form');
+	hero__form.addEventListener('submit', formsend);
+	async function formsend(e) {
+		e.preventDefault();
+
+		let formDatahero = new FormData(hero__form);
+
+		hero__form.classList.add('_sending');
+
+		let responsehero = await fetch('sendhero.php', {
+			method: 'POST',
+			body: formDatahero
+		});
+
+		if (responsehero.ok) {
+			let result = await responsehero.json();
+			alert(result.message);
+			hero__form.reset();
+			hero__form.classList.remove('_sending');
+		} else {
+			alert("Ошибка");
+			hero__form.classList.remove('_sending');
+		}
+	}
+})
+document.addEventListener('DOMContentLoaded', function () {
+	const order__form = document.querySelector('.order__form');
+	order__form.addEventListener('submit', formsend);
+	async function formsend(e) {
+		e.preventDefault();
+
+		let formDataorder = new FormData(order__form);
+
+		order__form.classList.add('_sending');
+
+		let responseorder = await fetch('sendorder.php', {
+			method: 'POST',
+			body: formDataorder
+		});
+
+		if (responseorder.ok) {
+			let result = await responseorder.json();
+			alert(result.message);
+			order__form.reset();
+			order__form.classList.remove('_sending');
+		} else {
+			alert("Ошибка");
+			order__form.classList.remove('_sending');
+		}
+	}
+})
+document.addEventListener('DOMContentLoaded', function () {
+	const popap__form = document.querySelector('.popap__form');
+	popap__form.addEventListener('submit', formsend);
+	async function formsend(e) {
+		e.preventDefault();
+
+		let formDatapopap = new FormData(popap__form);
+
+		popap__form.classList.add('_sending');
+
+		let responsepopap = await fetch('sendorder.php', {
+			method: 'POST',
+			body: formDatapopap
+		});
+
+		if (responsepopap.ok) {
+			let result = await responsepopap.json();
+			alert(result.message);
+			popap__form.reset();
+			popap__form.classList.remove('_sending');
+		} else {
+			alert("Ошибка");
+			popap__form.classList.remove('_sending');
+		}
+	}
+})
